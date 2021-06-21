@@ -8,7 +8,7 @@ menu_list_array = ["Veg Margherita Pizza",
 
 function getmenu() {
     var htmldata;
-    htmldata = "<ol class='menulist'>"
+    htmldata = "<ol id='menu_list'>"
     menu_list_array.sort();
     for (var i = 0; i < menu_list_array.length; i++) {
 
@@ -28,7 +28,7 @@ function add_item() {
     for (var i =0; i<menu_list_array.length; i++ ){
 
         htmldata=htmldata+'<div class="card">'          
-        + '<img src="images/pizzaImg.png">'
+        + '<img  src="images/pizzaImg.png">'
         + menu_list_array[i] + '</div>'
     }
     htmldata=htmldata+"</section>"
